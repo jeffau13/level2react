@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Portal from './Portal';
+import { Portal } from 'Utilities';
 import Icon from './Icon';
+import { Card } from './Cards';
 export default class Modal extends Component {
   render() {
     const { children, toggle, on } = this.props;
@@ -34,12 +35,8 @@ const ModalWrapper = styled.div`
   align-items: center;
 `;
 
-const ModalCard = styled.div`
+const ModalCard = styled(Card)`
   position: relative;
-  background: white;
-  padding: 2rem;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
   min-width: 400px;
   max-width: 90%;
