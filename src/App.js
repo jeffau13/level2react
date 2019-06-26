@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Toggle from './ToggleRPC';
-import Portal from './Portal';
-import Modal from './Modal';
+import { Toggle, Portal, Modal } from './Utilities';
 class App extends Component {
   render() {
     return (
@@ -13,7 +11,7 @@ class App extends Component {
             <Fragment>
               <button onClick={toggle}>Login</button>
               <Modal on={on} toggle={toggle}>
-                <h1>Modal lorem20 </h1>
+                <h1>Modal</h1>
               </Modal>
             </Fragment>
           )}
