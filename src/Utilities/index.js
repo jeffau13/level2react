@@ -1,4 +1,4 @@
 import Portal from './Portal';
 import Toggle from './Toggle';
-
-export { Portal, Toggle };
+import elevation from './elevation';
+export { Portal, Toggle, elevation };
